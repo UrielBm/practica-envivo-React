@@ -1,24 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
-
+import { Cards } from './components/Cards/Cards.jsx';
+import './reset.css'
+import './components/Cards/styles.css'
+import  imgCard1 from './assets/card1.svg'
+import  imgCard2 from './assets/card2.svg'
+import  imgCard3 from './assets/card3.svg'
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <main className="wrapperMain">
+      <h1 className="titleMain">Propuestas de valor</h1>
+      <section className="wrapperCards">
+        <Cards 
+        img={imgCard1}
+        titleCard="Cursá como quieras"
+        description="Tenemos propuestas presenciales, 100% remota o mixtas."
+        />
+        <Cards
+        img={imgCard2}
+        titleCard="Plataforma interactiva"
+        description="Poné a prueba tu conocimiento o practicá con las distintas actividades que te proponemos."
+        />
+        <Cards
+        img={imgCard3}
+        titleCard="Te acompañamos"
+        description="Un equipo de trabajo especializado te acompaña durante toda la cursada."
+        />
+        </section>
+    </main>
   );
 }
 
