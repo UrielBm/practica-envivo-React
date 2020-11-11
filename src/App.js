@@ -1,13 +1,14 @@
 import { Cards } from './components/Cards/Cards.jsx';
 import './reset.css'
-import './components/Cards/styles.css'
+import './style.css'
 import  imgCard1 from './assets/card1.svg'
 import  imgCard2 from './assets/card2.svg'
 import  imgCard3 from './assets/card3.svg'
+import { Title } from './components/Title/Title.jsx';
 function App() {
   return (
     <main className="wrapperMain">
-      <h1 className="titleMain">Propuestas de valor</h1>
+        <Title title="Propuestas de valor"/>
       <section className="wrapperCards">
         <Cards 
         img={imgCard1}
